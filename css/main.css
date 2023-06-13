@@ -1,0 +1,53 @@
+#title {
+    font-size: 50px;
+}
+
+#customer_info {
+    background-color: rgba(255, 243, 82, 0.808);
+}
+
+#pizza_size {
+    background-color: rgba(255, 102, 0, 0.479);
+}
+
+#pizza_crust {
+    background-color: rgba(255, 190, 110, 0.623);
+}
+
+#pizza_flavour {
+    background-color: rgba(255, 124, 115, 0.534);
+}
+
+#drink {
+    background-color: rgba(245, 124, 174, 0.63);
+}
+
+.button {
+    background-color: rgb(224, 101, 0);
+    color:blanchedalmond;
+    font-size: 20px;
+    padding: 14px 40px;
+    border-radius: 12px;
+    border: orangered;
+}
+
+.button:hover {
+    background-color: orangered;
+    color:blanchedalmond;
+}
+
+#order {
+    background-color: rgba(252, 180, 46, 0.664);
+}
+
+#subtotal {
+    font-size: 20px;
+}
+
+#tax {
+    font-size: 20px;
+}
+
+#grand_total {
+    font-size: 20px;
+}

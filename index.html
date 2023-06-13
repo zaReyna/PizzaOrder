@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Czarina Sotelo">
+    <meta name="id" content="">
+    <meta name="campus" content="Trafalgar">
+    <script text="text/javascript" src="js/order.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <title>Assignment 2</title>
+
+    <style>
+        body { 
+            background-image: url(../Sotelo_Czarina_Assignment2/img/pizza_heart_2.png);
+            background-repeat: none;
+            background-color: rgba(255, 166, 0, 0.678);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 2px;
+            color: brown;
+            text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    
+    <form id="order_form" method="post">
+        <header id="header"><img src=""></header>
+        <h1 id="title"> Pizza Perfect</h1>
+        <fieldset id="customer_info">
+            <legend><h3> Customer Information: </h3></legend>
+                <table>
+                    <tr>
+                        <td> First name: </td>
+                        <td>
+                            <input type="text" id="first_name" required>
+                        </td>
+                        <td>
+                            <span id="field_1"> * </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Last name: </td>
+                        <td>
+                            <input type="text" id="last_name" required>
+                        </td>
+                        <td>
+                        <span id="field_2"> * </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Email Address: </td>
+                        <td>
+                            <input type="text" id="phone#" required>
+                        </td>
+                        <td>
+                            <span id="field_3"> * </span>
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+
+        <h2 id="title"> Pick your perfect order </h2>    
+        <fieldset id="pizza_size">
+            <legend><h3> Size </h3></legend>
+                <table>
+                    <tr>
+                        <td> Small </td>
+                        <td>
+                            <input type="radio" id="small" value="small" name="size" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Medium </td>
+                        <td>
+                            <input type="radio" id="med" value="med" name="size" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Large </td>
+                        <td> 
+                            <input type="radio" id="large" value="large" name="size" required>
+                        </td>
+                    </tr>
+                </table>
+                <p id="size_required"></p>
+            </fieldset>
+
+            <fieldset id="pizza_crust">
+                <legend><h3> Crust </h3></legend>
+                    <table>
+                        <tr>
+                            <td> Thin </td>
+                            <td>
+                                <input type="radio" value="thin" name="crust" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Hand-tossed </td>
+                            <td>
+                                <input type="radio" value="hand-tossed" name="crust" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Regular </td>
+                            <td>
+                                <input type="radio" value="regular" name="crust" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>* There are no extra charges for pizza crust *</p> 
+                    <p id="crust_required"></p>
+            </fieldset>
+                
+            <fieldset id="pizza_flavour">
+                <legend><h3> Flavour</h3></legend>
+                <table>
+                    <tr>
+                        <td> Veggie Lovers</td>
+                        <td>
+                            <input type="radio" id="veggie" value="veggie" name="flavour" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Pepperoni </td>
+                        <td>
+                            <input type="radio" id="pepperoni" value="pepperoni" name="flavour" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Cheese </td>
+                        <td>
+                            <input type="radio" id="cheese" value="cheese" name="flavour" required>
+                        </td>
+                    </tr>
+                </table>
+                <p id="flavour_required"></p>
+            </fieldset>
+
+            <fieldset id="drink">
+                <legend><h3> Drink</h3></legend>
+                <table>
+                    <tr>
+                        <td> Drink: </td>
+                        <td>
+                            <select id="drink">
+                                <option value="none" selected> Select a drink </option>
+                                <option value="coke"> Coke </option>
+                                <option value="canada_dry"> Canada Dry </option> 
+                                <option value="sprite"> Sprite </option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <p id="drink_required"></p>
+            </fieldset>
+
+        <br>
+        <input type="button" id="btn1" class="button" onclick="checkoutOrder()" value="Checkout">
+        <br>
+        <fieldset id="order">
+        <legend><h3>Pizza Order Total</h3></legend>
+        <label id="subtotal"><strong>*</strong></label>
+        <br>
+        <label id="tax"><strong>*</strong></label>
+        <br>
+        <label id="grand_total"><strong>*</strong></label>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
